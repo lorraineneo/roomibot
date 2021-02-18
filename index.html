@@ -145,21 +145,21 @@
                                                             <center><b>Rules</b></center>
     
     <textarea name="rules" id="rules" rows="20" cols="60" style="font-family: courier;">
-    # These lines are comments.
+# These lines are comments.
     
-    # Remember that rules are formatted as
-    # State Surroundings -> Move NewState
+# Remember that rules are formatted as
+# State Surroundings -> Move NewState
     
-    # RoomIBot starts in state 0.
-    # Here, state 0 goes N as far as possible
+# RoomIBot starts in state 0.
+# Here, state 0 goes N as far as possible
     
-    0 x*** -&gt; N 0   # if there's nothing to the N, go N
-    0 N*** -&gt; X 1   # if N is blocked, switch to state 1
+0 x*** -&gt; N 0   # if there's nothing to the N, go N
+0 N*** -&gt; X 1   # if N is blocked, switch to state 1
     
-    # and state 1 goes S as far as possible
+# and state 1 goes S as far as possible
     
-    1 ***x -&gt; S 1   # if there's nothing to the S, go S
-    1 ***S -&gt; X 0   # otherwise, switch to state 0
+1 ***x -&gt; S 1   # if there's nothing to the S, go S
+1 ***S -&gt; X 0   # otherwise, switch to state 0
     </textarea>
                             </td>
     
